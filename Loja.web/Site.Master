@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Loja.web.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    
+</head>
+<body>
+    <form id="formMaster" runat="server">
+        <div id="cabecalho">
+            <h1>Loja Cassio</h1>
+        </div>
+
+        <div id="menu">
+            <ul>
+                <li>
+                    <asp:HyperLink ID="linkInicio" runat="server" NavigateUrl="~/default.aspx">Inicio</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="lonkProdutos" runat="server">Produtos</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="linkClientes" runat="server">Clientes</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="linkVendedores" runat="server">Vendedores</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="linkSobre" runat="server" NavigateUrl="~/sobre.aspx">Sobre</asp:HyperLink>
+                </li>
+            </ul>
+        </div>
+    <div id="corpo">
+        <asp:ContentPlaceHolder ID="conteudo" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+        <div id="rodape">
+            <p>Cassio Acherman 2015 - Todos os direitos reservados </p>
+        </div>
+    </form>
+</body>
+</html>
