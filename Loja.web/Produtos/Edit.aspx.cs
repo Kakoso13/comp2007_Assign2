@@ -13,5 +13,10 @@ namespace Loja.web.Produtos
         {
 
         }
+
+        protected void btnNovo_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Add.aspx");
+        }
     }
 }

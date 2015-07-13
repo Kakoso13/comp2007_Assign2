@@ -44,4 +44,7 @@
             </td>
         </tr>
     </table>
+    <p>
+        <asp:Label ID="lblMenssagen" runat="server" Text="Label"></asp:Label>
+    </p>
 </asp:Content>

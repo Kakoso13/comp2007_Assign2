@@ -19,7 +19,7 @@
                     <asp:HyperLink ID="linkInicio" runat="server" NavigateUrl="~/default.aspx">Inicio</asp:HyperLink>
                 </li>
                 <li>
-                    <asp:HyperLink ID="lonkProdutos" runat="server">Produtos</asp:HyperLink>
+                    <asp:HyperLink ID="lonkProdutos" runat="server" NavigateUrl="~/Produtos/List.aspx">Produtos</asp:HyperLink>
                 </li>
                 <li>
                     <asp:HyperLink ID="linkClientes" runat="server">Clientes</asp:HyperLink>
@@ -39,7 +39,7 @@
     </div>
 
         <div id="rodape">
-            <p>Cassio Acherman 2015 - Todos os direitos reservados </p>
+            <p>VCassio Acherman 2015 - Todos os direitos reservados </p>
         </div>
     </form>
 </body>
