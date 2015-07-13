@@ -18,12 +18,40 @@ namespace Loja.web.Clientes
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!Page.IsPostBack)
+            {
+                if(Request.QueryString["Id"] != null)
+                {
+                    int id = Convert.ToInt32(Request.QueryString["Id"]);
+                    Cliente cliente = BD.Clientes.Consultar(id);
+                    if (cliente != null)
+                    {
+                        lblId.Text = cliente.Id.ToString();
+                        lblNome.Text = cliente.Nome;
+                        lblCpf.Text = cliente.Cpf;
+                        lblEmail.Text = cliente.Email;
+                        lblTelefone.Text = cliente.Telefone;
+                        lblEndereco.Text = cliente.Endereco;
+                        lblRendaFamiliar.Text = cliente.RendaFamiliar.ToString();
+                        lblDataCadastro.Text = cliente.DataCadastro.ToString("dd/MM/yyyy HH:mm:ss");
+                        lblDataAlteracao.Text = cliente.DataAlteracao.ToString("dd/MM/yyyy HH:mm:ss");
+                    }
+                }
+            }
         }
 
         protected void btnEditar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Edit.aspx");
+            Response.Redirect(string.Format("Edit.aspx?Id={0}", lblId.Text));
+        }
+
+        protected void btnExcluir_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(lblId.Text);
+            if (BD.Clientes.Excluir(id))
+            {
+                Response.Redirect("List.aspx");
+            }
         }
     }
 }

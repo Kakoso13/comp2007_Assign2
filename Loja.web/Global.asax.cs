@@ -15,5 +15,11 @@ namespace Loja.web
             BD bd = new BD(@"C:\FOURTH TERM\ASP.Net\Assign2\Loja\Loja.web\App_Data");
             Application["BD"] = bd;
         }
+
+        protected void Application_End(object sender, EventArgs e)
+        {
+            BD bd = (BD)Application["BD"];
+            bd.Gravar();
+        }
     }
 }

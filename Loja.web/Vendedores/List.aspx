@@ -4,7 +4,7 @@
     <a href="Add.aspx">Adicionar Vendedor</a><br />
 &nbsp;<asp:GridView ID="Lista" runat="server" AutoGenerateColumns="False">
         <Columns>
-            <asp:HyperLinkField DataTextField="Cpf" HeaderText="CPF" />
+            <asp:HyperLinkField DataTextField="Cpf" HeaderText="CPF" DataNavigateUrlFields="Id" DataNavigateUrlFormatString="View.aspx?Id={0}" />
             <asp:BoundField DataField="Nome" HeaderText="Nome" />
         </Columns>
     </asp:GridView>

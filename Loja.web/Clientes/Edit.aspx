@@ -51,8 +51,8 @@
         <tr>
             <td></td>
             <td>
-                <asp:Button ID="btnSalvar" runat="server" Text="Salvar Produto" />
-                <asp:Button ID="btnNovo" runat="server" Text="Novo Produto" OnClick="btnNovo_Click" />
+                <asp:Button ID="btnSalvar" runat="server" Text="Salvar Cliente" OnClick="btnSalvar_Click" />
+                <asp:Button ID="btnNovo" runat="server" Text="Novo Cliente" OnClick="btnNovo_Click" />
             </td>
         </tr>
     </table>

@@ -4,7 +4,7 @@
     <a href="Add.aspx">Adicionar Item</a><br />
 &nbsp;<asp:GridView ID="Lista" runat="server" AutoGenerateColumns="False">
         <Columns>
-            <asp:HyperLinkField DataTextField="Descricao" HeaderText="Produto" />
+            <asp:HyperLinkField DataTextField="Descricao" HeaderText="Produto" DataNavigateUrlFields="Id" DataNavigateUrlFormatString="View.aspx?Id={0}" />
             <asp:BoundField DataField="Categoria" HeaderText="Categoria" />
         </Columns>
     </asp:GridView>

@@ -63,8 +63,8 @@
         <tr>
             <td></td>
             <td>
-                <asp:Button ID="btnEditar" runat="server" Text="Editar Produto" OnClick="btnEditar_Click" />
-                <asp:Button ID="btnExcluir" runat="server" Text="Excluir Produto" />
+                <asp:Button ID="btnEditar" runat="server" Text="Editar Cliente" OnClick="btnEditar_Click" />
+                <asp:Button ID="btnExcluir" runat="server" Text="Excluir Cliente" OnClick="btnExcluir_Click" />
             </td>
         </tr>
     </table>
