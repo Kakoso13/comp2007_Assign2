@@ -22,10 +22,10 @@
                     <asp:HyperLink ID="lonkProdutos" runat="server" NavigateUrl="~/Produtos/List.aspx">Produtos</asp:HyperLink>
                 </li>
                 <li>
-                    <asp:HyperLink ID="linkClientes" runat="server">Clientes</asp:HyperLink>
+                    <asp:HyperLink ID="linkClientes" runat="server" NavigateUrl="~/Clientes/List.aspx">Clientes</asp:HyperLink>
                 </li>
                 <li>
-                    <asp:HyperLink ID="linkVendedores" runat="server">Vendedores</asp:HyperLink>
+                    <asp:HyperLink ID="linkVendedores" runat="server" NavigateUrl="~/Vendedores/List.aspx">Vendedores</asp:HyperLink>
                 </li>
                 <li>
                     <asp:HyperLink ID="linkSobre" runat="server" NavigateUrl="~/sobre.aspx">Sobre</asp:HyperLink>
