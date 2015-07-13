@@ -10,7 +10,7 @@ namespace Loja.BO
 {
     public class Colecao<T>
     {
-        List<T> Lista { get; set; }
+        public List<T> Lista { get; set; }
 
         public Colecao()
         {

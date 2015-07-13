@@ -7,18 +7,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Loja.web {
+namespace Loja.web.Clientes {
     
     
-    public partial class sobre {
+    public partial class List {
         
         /// <summary>
-        /// btnGravar control.
+        /// Lista control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnGravar;
+        protected global::System.Web.UI.WebControls.GridView Lista;
     }
 }

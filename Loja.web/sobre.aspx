@@ -6,4 +6,7 @@
     <p>
         Essa pagina serve como exemplo para uma possivel implantacao a um sistema no Brasil
     </p>
+    <p>
+        <asp:Button ID="btnGravar" runat="server" Text="Gravar banco de dados" OnClick="btnGravar_Click" />
+    </p>
 </asp:Content>

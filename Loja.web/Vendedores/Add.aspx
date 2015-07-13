@@ -38,12 +38,7 @@
                 <asp:TextBox ID="txtEndereco" runat="server"></asp:TextBox>
             </td>
         </tr>
-         <tr>
-            <td>Comissao: </td>
-            <td>
-                <asp:TextBox ID="txtComissao" runat="server"></asp:TextBox>
-            </td>
-        </tr>
+         
         <tr>
             <td></td>
             <td></td>
@@ -51,8 +46,8 @@
         <tr>
             <td></td>
             <td>
-                <asp:Button ID="btnSalvar" runat="server" Text="Salvar Produto" />
-                <asp:Button ID="btnNovo" runat="server" Text="Novo Produto" />
+                <asp:Button ID="btnSalvar" runat="server" Text="Salvar Vendedor" OnClick="btnSalvar_Click" />
+                <asp:Button ID="btnNovo" runat="server" Text="Novo Vendedor" OnClick="btnNovo_Click" />
             </td>
         </tr>
     </table>

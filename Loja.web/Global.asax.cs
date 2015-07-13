@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Security;
 using System.Web.SessionState;
+using Loja.BO;
 
 namespace Loja.web
 {
@@ -11,6 +12,8 @@ namespace Loja.web
     {
         protected void Application_Start(object sender, EventArgs e)
         {
+            BD bd = new BD(@"C:\FOURTH TERM\ASP.Net\Assign2\Loja\Loja.web\App_Data");
+            Application["BD"] = bd;
         }
     }
 }
